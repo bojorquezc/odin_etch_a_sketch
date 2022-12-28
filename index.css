@@ -46,6 +46,7 @@ table {
 
 
 /* Main CSS*/
+
 body {
     font-family: "Nunito", Verdana, Geneva, Tahoma, sans-serif;
     background-color: #353535;
@@ -76,20 +77,106 @@ h1 {
     width: 480px;
 }
 
+/* .etch-grid-lines {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.etch-grid-lines div {
+    height: 30px;
+    width: 30px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: aqua;
+} */
+
 .etch-container {
     display: grid;
     grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
 }
 
-div.etch-container div {
+/* .etch-container div */
+.etch-square {
     height: 30px;
     width: 30px;
     background-color: #faebd7;
-    /* border-color: rgb(143, 143, 143);
-    border-width: 0.1px;
-    border-style: solid; */
+    outline: #00ffff solid 1px;
 }
 
-/* div.etch-container div:hover {
-    background-color: black;
-} */
+.size-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px 0px 15px
+}
+
+.size-buttons button{
+    background-color: #8fbc8f;
+    border: none;
+    color: #ffffff;
+    padding: 10px 0px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.size-buttons button:hover {
+    background-color: #1e492f;
+    color: #a0d168;
+}
+
+.reset-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px 50px;
+}
+
+.reset-button {
+    background-color: #e05928;
+    border: none;
+    color: #ffffff;
+    padding: 5px 0px 5px;
+    margin: 15px 0px 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight:bold;
+    width: 480px;
+    cursor: pointer;
+}
+
+.rainbow-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0px 10px;
+}
+
+.rainbow-button {
+    background: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(255, 154, 0, 1) 10%, rgba(208, 222, 33, 1) 20%, rgba(79, 220, 74, 1) 30%, rgba(63, 218, 216, 1) 40%, rgba(47, 201, 226, 1) 50%, rgba(28, 127, 238, 1) 60%, rgba(95, 21, 242, 1) 70%, rgba(186, 12, 248, 1) 80%, rgba(251, 7, 217, 1) 90%, rgba(255, 0, 0, 1) 100%);
+    /* background-color: #0300a5; */
+    border: none;
+    color: #ffffff;
+    padding: 5px 0px 5px;
+    margin: 15px 0px 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    width: 480px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    padding: 10px 0px 10px;
+    background-color: #000000;
+}

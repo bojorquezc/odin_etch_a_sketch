@@ -15,14 +15,35 @@
     <header class="title-section">
         <i class="fa-sharp fa-solid fa-gamepad fa-4x"></i>
         <h1>Etch a Sketch</h1>
-        <p>Etch a Sketch project for The Odin Project Foundations</p>
+        <p>Select your grid size and create your artwork</p>
     </header>
+
+    <div class="size-buttons">
+        <button class="button16by16">16 * 16 Grid</button>
+        <button class="button32by32">32 * 32 Grid</button>
+        <button class="button64by64">64 * 64 Grid</button>
+    </div>
+
+    <div class="rainbow-row">
+        <button class="rainbow-button">Rainbow Mode</button>
+    </div>
+
     <div class="etch-row">
         <div class="etch-frame">
+            <div class="etch-grid-lines"></div>
             <div class="etch-container"></div>
         </div>
     </div>
+
+    <div class="reset-row">
+        <button class="reset-button">Reset Grid</button>
+    </div>
+
     <script src="./etch_a_sketch.js" defer></script>
 </body>
+
+<footer>
+    <p>Copyright © The Odin Project 2022 | Created by Conrado Bojorquez</p>
+</footer>
 
 </html>
